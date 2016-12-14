@@ -9,6 +9,13 @@ function main () {
   return svgSprite
 }
 
+function htmlToElement (html) {
+  var template = document.createElement('template')
+  template.innerHTML = html
+  return template.content.firstChild
+}
+
 module.exports = main
 module.exports.path = spritePath
 module.exports.rawPath = svgPath
+module.exports.htmlToElement = htmlToElement

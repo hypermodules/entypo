@@ -28,7 +28,13 @@ var svgSprite = require('entypo') // Spritesheet contents
 console.log(svgSprite.path) // node_modules/entypo/dist/sprite.svg
 console.log(svgSprite.rawPath) // node_modules/entypo/Entypo+
 // Then put the contents into the page somehow
-document.body.innerHTML += svgSprite()
+document.body.insertBefore(htmlToElement(svgSprite), document.body.firstChild)
+
+function htmlToElement (html) {
+  var template = document.createElement('template')
+  template.innerHTML = html
+  return template.content.firstChild
+}
 ```
 
 This module packages Entypo+ as a npm installable module, and ships a sprite-sheet for convenience.  The sprite-sheet ran the original assets through [svgo](https://github.com/svg/svgo).
