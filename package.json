@@ -1,0 +1,44 @@
+{
+  "name": "entypo",
+  "description": "411 carefully crafted premium pictograms by Daniel Bruce",
+  "version": "1.0.0",
+  "author": "Bret Comnes <bcomnes@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/bcomnes/entypo/issues"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^3.1.2",
+    "rimraf": "^2.5.4",
+    "spritesh": "^1.2.0",
+    "standard": "*",
+    "svgo": "^0.7.1",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/bcomnes/entypo",
+  "keywords": [
+    "entypo",
+    "icons",
+    "sprite",
+    "svg"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcomnes/entypo.git"
+  },
+  "scripts": {
+    "test": "standard && tape test/*.js | tap-spec",
+    "prepublish": "npm run build",
+    "build": "run-s clean optimize make-sprite clean:tmp",
+    "make-sprite": "mkdirp dist && spritesh -i node_modules/.tmp -o dist/sprite.svg --prefix entypo-",
+    "optimize": "run-p optimize:*",
+    "optimize:base": "svgo -f Entypo+/Entypo+ -o node_modules/.tmp",
+    "optimize:social": "svgo -f Entypo+/Entypo+\\ Social\\ Extension -o node_modules/.tmp",
+    "clean": "run-p clean:*",
+    "clean:tmp": "rimraf node_modules/.tmp",
+    "clean:dist": "rimraf dist"
+  }
+}
