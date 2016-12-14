@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Bret Comnes <bcomnes@gmail.com>",
   "bugs": {
-    "url": "https://github.com/bcomnes/entypo/issues"
+    "url": "https://github.com/hypermodules/entypo/issues"
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
@@ -16,7 +16,7 @@
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0"
   },
-  "homepage": "https://github.com/bcomnes/entypo",
+  "homepage": "https://github.com/hypermodules/entypo",
   "keywords": [
     "entypo",
     "icons",
@@ -27,7 +27,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bcomnes/entypo.git"
+    "url": "https://github.com/hypermodules/entypo.git"
   },
   "scripts": {
     "test": "standard && tape test/*.js | tap-spec",
