@@ -15,7 +15,14 @@ function htmlToElement (html) {
   return template.content.firstChild
 }
 
+function getNode () {
+  var svg = main()
+  var node = htmlToElement(svg)
+  return node
+}
+
 module.exports = main
 module.exports.path = spritePath
 module.exports.rawPath = svgPath
 module.exports.htmlToElement = htmlToElement
+module.exports.getNode = getNode
