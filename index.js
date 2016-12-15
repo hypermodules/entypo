@@ -1,7 +1,7 @@
 var path = require('path')
 var fs = require('fs')
 
-var spritePath = path.join(__dirname, 'sprite.svg')
+var spritePath = path.join(__dirname, 'dist', 'sprite.svg')
 var svgPath = path.join(__dirname, 'Entypo+')
 
 function main () {
