@@ -9,8 +9,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/entypo.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/entypo
-[travis-image]: https://img.shields.io/travis/bcomnes/entypo.svg?style=flat-square
-[travis-url]: https://travis-ci.org/bcomnes/entypo
+[travis-image]: https://img.shields.io/travis/hypermodules/entypo.svg?style=flat-square
+[travis-url]: https://travis-ci.org/hypermodules/entypo
 [davidDev-img]: https://david-dm.org/hypermodules/entypo/dev-status.svg?style=flat-square
 [davidDev-url]: https://david-dm.org/hypermodules/entypo?type=dev
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
