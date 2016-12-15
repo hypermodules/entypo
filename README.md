@@ -4,7 +4,7 @@
 
 [![npm][npm-image]][npm-url]
 [![travis][travis-image]][travis-url]
-[![devDependencies Status](davidDev-img)][davidDev-url]
+[![devDependencies Status][davidDev-img]][davidDev-url]
 [![standard][standard-image]][standard-url]
 
 [npm-image]: https://img.shields.io/npm/v/entypo.svg?style=flat-square
