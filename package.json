@@ -30,15 +30,15 @@
     "url": "https://github.com/hypermodules/entypo.git"
   },
   "scripts": {
-    "test": "standard && tape test/*.js | tap-spec",
-    "prepublish": "npm run build",
     "build": "run-s clean optimize make-sprite clean:tmp",
+    "clean": "run-p clean:*",
+    "clean:dist": "rimraf dist",
+    "clean:tmp": "rimraf node_modules/.tmp",
     "make-sprite": "mkdirp dist && spritesh -i node_modules/.tmp -o dist/sprite.svg --prefix entypo-",
     "optimize": "run-p optimize:*",
     "optimize:base": "svgo -f Entypo+/Entypo+ -o node_modules/.tmp",
     "optimize:social": "svgo -f Entypo+/Entypo+\\ Social\\ Extension -o node_modules/.tmp",
-    "clean": "run-p clean:*",
-    "clean:tmp": "rimraf node_modules/.tmp",
-    "clean:dist": "rimraf dist"
+    "prepublish": "npm run build",
+    "test": "standard && tape test/*.js | tap-spec"
   }
 }
