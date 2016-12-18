@@ -33,11 +33,12 @@
     "build": "run-s clean optimize make-sprite clean:tmp",
     "clean": "run-p clean:*",
     "clean:dist": "rimraf dist",
-    "clean:tmp": "rimraf node_modules/.tmp",
-    "make-sprite": "mkdirp dist && spritesh -i node_modules/.tmp -o dist/sprite.svg --prefix entypo-",
+    "clean:tmp": "rimraf .tmp",
+    "example": "budo example.js --open --live -- -t brfs",
+    "make-sprite": "mkdirp dist && spritesh -i .tmp -o dist/sprite.svg --prefix entypo-",
     "optimize": "run-p optimize:*",
-    "optimize:base": "svgo -f Entypo+/Entypo+ -o node_modules/.tmp",
-    "optimize:social": "svgo -f Entypo+/Entypo+\\ Social\\ Extension -o node_modules/.tmp",
+    "optimize:base": "svgo -f Entypo+/Entypo+ -o .tmp",
+    "optimize:social": "svgo -f Entypo+/Entypo+\\ Social\\ Extension -o .tmp",
     "prepublish": "npm run build",
     "test": "standard && tape test/*.js | tap-spec"
   }
