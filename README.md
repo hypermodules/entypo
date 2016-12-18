@@ -42,23 +42,26 @@ npm install entypo
 
 ## Usage
 
-### Basic
-
-```js
-const entypo = require('entypo')
-
-const sprite = entypo()
-
-document.body.innerHTML += sprite
-document.body.innerHTML += '<svg><use xlink:href="#entypo-aircraft" /></svg>'
-```
-
-### Slightly More Advanced
+In your JavaScript:
 
 ```js
 const entypo = require('entypo')
 
 document.body.insertBefore(entypo.getNode(), document.body.firstChild)
+```
+
+In your HTML:
+
+```html
+<svg><use xlink:href="#entypo-star" /></svg>
+```
+
+In your CSS:
+
+```css
+svg {
+  fill: #fff;
+}
 ```
 
 ### API
