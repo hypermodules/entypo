@@ -7,6 +7,8 @@
     "url": "https://github.com/hypermodules/entypo/issues"
   },
   "devDependencies": {
+    "brfs": "^1.4.3",
+    "budo": "^9.3.0",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^3.1.2",
     "rimraf": "^2.5.4",
