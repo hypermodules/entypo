@@ -5,8 +5,7 @@ var spritePath = path.join(__dirname, 'dist', 'sprite.svg')
 var svgPath = path.join(__dirname, 'Entypo+')
 
 function main () {
-  var svgSprite = fs.readFileSync(spritePath, 'utf8')
-  return svgSprite
+  return fs.readFileSync(path.join(__dirname, 'dist', 'sprite.svg'), 'utf8')
 }
 
 function htmlToElement (html) {
