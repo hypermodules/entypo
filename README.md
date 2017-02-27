@@ -94,10 +94,6 @@ This is a utility function used by `getNode()` to convert the raw SVG text provi
 
 - [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String): path to svg sprite (e.g. `node_modules/entypo/dist/sprite.svg`)
 
-#### `entypo.rawPath`
-
-- [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String): path to unmodified `Entypo+` directory (e.g. `node_modules/entypo/Entypo+`)
-
 
 ### Icon Names
 

@@ -1,7 +1,7 @@
 {
   "name": "entypo",
   "description": "SVG sprite for the Entypo+ icon collection.",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "author": "Bret Comnes <bcomnes@gmail.com>",
   "bugs": {
     "url": "https://github.com/hypermodules/entypo/issues"
@@ -9,6 +9,7 @@
   "devDependencies": {
     "brfs": "^1.4.3",
     "budo": "^9.3.0",
+    "gh-release": "^2.2.1",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^4.0.0",
     "rimraf": "^2.5.4",
@@ -36,12 +37,13 @@
     "clean": "run-p clean:*",
     "clean:dist": "rimraf dist",
     "clean:tmp": "rimraf .tmp",
-    "example": "budo example.js --open --live -- -t brfs",
+    "start": "budo example.js --open --live -- -t brfs",
     "make-sprite": "mkdirp dist && spritesh -i .tmp -o dist/sprite.svg --prefix entypo-",
     "optimize": "run-p optimize:*",
-    "optimize:base": "svgo -f Entypo+/Entypo+ -o .tmp",
-    "optimize:social": "svgo -f Entypo+/Entypo+\\ Social\\ Extension -o .tmp",
+    "optimize:base": "svgo -f src/Entypo -o .tmp",
+    "optimize:social": "svgo -f src/Entypo\\ Social\\ Extension -o .tmp",
     "prepublish": "npm run build",
+    "gh-release": "gh-release",
     "test": "standard && tape test/*.js | tap-spec"
   }
 }

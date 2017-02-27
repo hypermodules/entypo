@@ -2,7 +2,6 @@ var path = require('path')
 var fs = require('fs')
 
 var spritePath = path.join(__dirname, 'dist', 'sprite.svg')
-var svgPath = path.join(__dirname, 'Entypo+')
 
 function main () {
   return fs.readFileSync(path.join(__dirname, 'dist', 'sprite.svg'), 'utf8')
@@ -22,6 +21,5 @@ function getNode () {
 
 module.exports = main
 module.exports.path = spritePath
-module.exports.rawPath = svgPath
 module.exports.htmlToElement = htmlToElement
 module.exports.getNode = getNode
