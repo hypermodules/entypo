@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "brfs": "^1.4.3",
-    "budo": "^9.3.0",
+    "budo": "^10.0.3",
     "gh-release": "^2.2.1",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^4.0.0",
