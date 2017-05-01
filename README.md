@@ -1,7 +1,5 @@
 # entypo
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/hypermodules/entypo.svg)](https://greenkeeper.io/)
-
 SVG sprite for the [Entypo+](http://entypo.com) icon collection.
 
 [![npm][npm-image]][npm-url]
