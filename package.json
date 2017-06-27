@@ -35,7 +35,7 @@
   },
   "scripts": {
     "build": "run-s clean optimize make-sprite clean:tmp build-www",
-    "build-www": "browserify example.js --debug | exorcist www/bundle.js.map > www/bundle.js",
+    "build-www": "browserify -t brfs example.js --debug | exorcist www/bundle.js.map > www/bundle.js",
     "clean": "run-p clean:*",
     "clean:dist": "rimraf dist",
     "clean:tmp": "rimraf .tmp",
