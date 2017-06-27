@@ -2,3 +2,7 @@ node_modules
 dist
 .tmp
 *.log
+www/bundle.js
+www/bundle.js.map
+yarn.lock
+package-lock.json
