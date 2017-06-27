@@ -9,6 +9,7 @@
   "devDependencies": {
     "brfs": "^1.4.3",
     "budo": "^10.0.3",
+    "exorcist": "^0.4.0",
     "gh-release": "^2.2.1",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^4.0.0",
@@ -33,16 +34,17 @@
     "url": "https://github.com/hypermodules/entypo.git"
   },
   "scripts": {
-    "build": "run-s clean optimize make-sprite clean:tmp",
+    "build": "run-s clean optimize make-sprite clean:tmp build-www",
+    "build-www": "browserify example.js --debug | exorcist www/bundle.js.map > www/bundle.js",
     "clean": "run-p clean:*",
     "clean:dist": "rimraf dist",
     "clean:tmp": "rimraf .tmp",
-    "start": "budo example.js --open --live -- -t brfs",
+    "start": "budo example.js:bundle.js --dir www --live --open -- -t brfs",
     "make-sprite": "mkdirp dist && spritesh -i .tmp -o dist/sprite.svg --prefix entypo-",
     "optimize": "run-p optimize:*",
     "optimize:base": "svgo -f src/Entypo -o .tmp",
     "optimize:social": "svgo -f src/Entypo\\ Social\\ Extension -o .tmp",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "gh-release": "gh-release",
     "test": "standard && tape test/*.js | tap-spec"
   }

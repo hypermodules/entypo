@@ -1,0 +1,41 @@
+* { box-sizing: border-box }
+html {
+  font-family: -apple-system, sans-serif;
+  font-size: 14px;
+}
+body {
+  background: #1e1e1e;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 10% 6em;
+}
+header {
+  width: 100%;
+  margin: 3em 0;
+}
+h1 {
+  font-weight: 300;
+}
+h1 a {
+  color: #fff;
+}
+a {
+  color: gold;
+  text-decoration: none;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  width: 16%;
+  min-width: 240px;
+  padding: .5em;
+}
+.icon svg {
+  height: 2em;
+  width: 2em;
+  fill: #fff;
+}
+.icon span {
+  padding-left: 1em;
+}
