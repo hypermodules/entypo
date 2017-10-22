@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.1.0
+
+- Add [brfs](https://github.com/browserify/brfs) to [browserify transform field](https://github.com/browserify/browserify-handbook#browserifytransform-field) for automatic module level transformation.
+
 ## 2.0.0
 
 ### Breaking

@@ -6,8 +6,10 @@
   "bugs": {
     "url": "https://github.com/hypermodules/entypo/issues"
   },
+  "dependencies": {
+    "brfs": "^1.4.3"
+  },
   "devDependencies": {
-    "brfs": "^1.4.3",
     "budo": "^10.0.3",
     "exorcist": "^1.0.0",
     "gh-release": "^3.0.0",
@@ -29,6 +31,11 @@
   ],
   "license": "ISC",
   "main": "index.js",
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hypermodules/entypo.git"
