@@ -70,7 +70,7 @@ svg {
 
 - [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function): returns svg sprite file contents as utf-8 text
 
-You can insert this into the page easily using the [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).  You will need to use something like [brfs](https://github.com/substack/brfs) to make this function work.
+You can insert this into the page easily using the [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).  This works by specifying [brfs](https://github.com/substack/brfs) in the [browserify transform field]().  You may need a special fs loader in webpack if its not picking up the transform.
 
 #### `entypo.getNode()`
 
