@@ -10,7 +10,7 @@
     "brfs": "^1.4.3"
   },
   "devDependencies": {
-    "budo": "^10.0.3",
+    "budo": "^11.0.0",
     "exorcist": "^1.0.0",
     "gh-release": "^3.0.0",
     "mkdirp": "^0.5.1",
