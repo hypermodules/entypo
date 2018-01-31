@@ -49,10 +49,10 @@
     "start": "budo example.js:bundle.js --dir www --live --open -- -t brfs",
     "make-sprite": "mkdirp dist && spritesh -i .tmp -o dist/sprite.svg --prefix entypo-",
     "optimize": "run-p optimize:*",
-    "optimize:base": "svgo -f src/Entypo -o .tmp",
-    "optimize:social": "svgo -f src/Entypo\\ Social\\ Extension -o .tmp",
+    "optimize:base": "mkdirp .tmp && svgo -f src/Entypo -o .tmp",
+    "optimize:social": "mkdirp .tmp && svgo -f src/Entypo\\ Social\\ Extension -o .tmp",
     "prepare": "npm run build",
     "gh-release": "gh-release",
-    "test": "standard && tape test/*.js | tap-spec"
+    "test": "standard && tape test/*.js | tap-spec && npm run build"
   }
 }
