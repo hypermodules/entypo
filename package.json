@@ -7,7 +7,7 @@
     "url": "https://github.com/hypermodules/entypo/issues"
   },
   "dependencies": {
-    "brfs": "^1.4.3"
+    "brfs": "^2.0.0"
   },
   "devDependencies": {
     "budo": "^11.0.0",
