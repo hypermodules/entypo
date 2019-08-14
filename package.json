@@ -15,7 +15,7 @@
     "gh-release": "^3.0.0",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^4.0.0",
-    "rimraf": "^2.5.4",
+    "rimraf": "^3.0.0",
     "spritesh": "^1.2.0",
     "standard": "*",
     "svgo": "^1.0.0",
