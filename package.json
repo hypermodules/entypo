@@ -13,7 +13,7 @@
     "budo": "^11.0.0",
     "exorcist": "^1.0.0",
     "gh-release": "^3.0.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.0",
     "npm-run-all": "^4.0.0",
     "rimraf": "^2.5.4",
     "spritesh": "^1.2.0",
