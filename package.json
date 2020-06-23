@@ -13,14 +13,14 @@
     "budo": "^11.0.0",
     "exorcist": "^1.0.0",
     "gh-release": "^3.0.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.4",
     "npm-run-all": "^4.0.0",
-    "rimraf": "^2.5.4",
+    "rimraf": "^3.0.2",
     "spritesh": "^1.2.0",
     "standard": "*",
     "svgo": "^1.0.0",
     "tap-spec": "^5.0.0",
-    "tape": "^4.0.0"
+    "tape": "^5.0.1"
   },
   "homepage": "https://github.com/hypermodules/entypo",
   "keywords": [
